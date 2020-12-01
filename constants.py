@@ -8,8 +8,8 @@ __email__ = "bohdan.deineka@edu.uni.lodz.pl"
 __status__ = "Production"
 
 # Constants
-SCREEN_WIDTH = 1000
-SCREEN_HEIGHT = 650
+SCREEN_WIDTH = 720
+SCREEN_HEIGHT = 480
 SCREEN_TITLE = "Platformer"
 
 CHARACTER_SCALING = 1
@@ -22,7 +22,7 @@ PLAYER_JUMP_SPEED = 20
 
 # How many pixels to keep as a minimum margin between the character
 # and the edge of the screen.
-LEFT_VIEWPORT_MARGIN = 250
-RIGHT_VIEWPORT_MARGIN = 250
-BOTTOM_VIEWPORT_MARGIN = 50
+LEFT_VIEWPORT_MARGIN = 48
+RIGHT_VIEWPORT_MARGIN = 48
+BOTTOM_VIEWPORT_MARGIN = 0
 TOP_VIEWPORT_MARGIN = 100

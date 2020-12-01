@@ -53,31 +53,33 @@ class Game(arcade.Window):
         self.player_sprite.center_y = 48
         self.player_list.append(self.player_sprite)
 
-        for x in range(0, 1250, 24):
-            wall = arcade.Sprite("images/tiles/tile22.png", constants.TILE_SCALING)
-            wall.center_x = x
-            wall.center_y = 12
-            self.wall_list.append(wall)
+        # --- Load in a map from the tiled editor ---
 
-        coordinate_list = [[128, 31],
-                           [256, 31],
-                           [384, 31],
-                           [512, 31],
-                           [640, 31],
-                           [768, 31]]
+        # Name of map file to load
+        map_name = "maps/map.tmx"
+        # Name of the layer in the file that has our platforms/walls
+        platforms_layer_name = 'Platforms'
+        # Name of the layer that has items for pick-up
+        coins_layer_name = 'Coins'
 
-        for coordinate in coordinate_list:
-            wall = arcade.Sprite("images/Objects/barrel.png", constants.TILE_SCALING)
-            wall.position = coordinate
-            self.wall_list.append(wall)
+        # Read in the tiled map
+        my_map = arcade.tilemap.read_tmx(map_name)
 
-        # Use a loop to place some coins for our character to pick up
-        for x in range(128, 1250, 256):
-            coin = arcade.Sprite(":resources:images/items/coinGold.png", constants.COIN_SCALING)
-            coin.center_x = x
-            coin.center_y = 96
-            self.coin_list.append(coin)
+        # -- Platforms
+        self.wall_list = arcade.tilemap.process_layer(map_object=my_map,
+                                                      layer_name=platforms_layer_name,
+                                                      scaling=constants.TILE_SCALING,
+                                                      use_spatial_hash=True)
 
+        # -- Coins
+        self.coin_list = arcade.tilemap.process_layer(my_map, coins_layer_name, constants.TILE_SCALING)
+
+        # --- Other stuff
+        # Set the background color
+        if my_map.background_color:
+            arcade.set_background_color(my_map.background_color)
+
+        # Create the 'physics engine'
         self.physics_engine = arcade.PhysicsEnginePlatformer(self.player_sprite,
                                                              self.wall_list,
                                                              constants.GRAVITY)
