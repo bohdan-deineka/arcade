@@ -10,9 +10,358 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="005c2f78-ad70-4759-b3ce-eaf326147b46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
+    <list default="true" id="005c2f78-ad70-4759-b3ce-eaf326147b46" name="Default Changelist" comment="Small tweak. Adding .idea to .gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/barrel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/box.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/chain1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/chain2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/chest_closed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/chest_opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/door1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/door2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/door3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/door4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/lever1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/lever2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/shield.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/stairs_full.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/stairs_part1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/stairs_part2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/stairs_part3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/stairs_part4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/torch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/vase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/walls1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/walls2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/window.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Objects/window_small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/boxCrate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/boxCrate_double.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/boxCrate_single.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/brickBrown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/brickGrey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/bridgeA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/bridgeB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/bush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/cactus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirtCenter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirtCenter_rounded.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirtCliffAlt_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirtCliffAlt_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirtCliff_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirtCliff_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirtCorner_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirtCorner_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirtHalf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirtHalf_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirtHalf_mid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirtHalf_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirtHill_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirtHill_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirtLeft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirtMid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/dirtRight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/doorClosed_mid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/doorClosed_top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grassCenter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grassCenter_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grassCliffAlt_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grassCliffAlt_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grassCliff_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grassCliff_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grassCorner_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grassCorner_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grassHalf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grassHalf_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grassHalf_mid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grassHalf_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grassHill_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grassHill_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grassLeft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grassMid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grassRight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/grass_sprout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/ladderMid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/ladderTop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/lava.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/lavaTop_high.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/lavaTop_low.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/leverLeft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/leverMid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/leverRight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/lockRed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/lockYellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/mushroomRed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planetCenter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planetCenter_rounded.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planetCliffAlt_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planetCliffAlt_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planetCliff_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planetCliff_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planetCorner_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planetCorner_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planetHalf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planetHalf_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planetHalf_mid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planetHalf_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planetHill_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planetHill_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planetLeft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planetMid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/planetRight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/plantPurple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/rock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sandCenter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sandCenter_rounded.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sandCliffAlt_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sandCliffAlt_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sandCliff_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sandCliff_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sandCorner_leftg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sandCorner_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sandHalf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sandHalf_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sandHalf_mid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sandHalf_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sandHill_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sandHill_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sandLeft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sandMid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/sandRight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/signExit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/signLeft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/signRight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snowCenter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snowCenter_rounded.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snowCliffAlt_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snowCliffAlt_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snowCliff_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snowCliff_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snowCorner_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snowCorner_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snowHalf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snowHalf_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snowHalf_mid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snowHalf_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snowHill_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snowHill_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snowLeft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snowMid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snowRight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/snow_pile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/spikes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stoneCenter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stoneCenter_rounded.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stoneCliffAlt_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stoneCliffAlt_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stoneCliff_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stoneCliff_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stoneCorner_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stoneCorner_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stoneHalf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stoneHalf_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stoneHalf_mid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stoneHalf_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stoneHill_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stoneHill_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stoneLeft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stoneMid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/stoneRight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/switchGreen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/switchGreen_pressed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/switchRed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/switchRed_pressed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile101.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile102.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile103.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile104.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile105.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile106.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile107.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile108.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile109.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile110.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile111.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile112.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile113.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile115.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile116.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile117.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile118.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile119.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile121.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile122.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile123.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile124.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile125.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile126.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile127.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile129.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile130.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile131.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile132.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile133.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile134.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile135.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile136.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile137.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile138.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile139.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile140.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile141.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile142.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile145.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile146.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile147.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile148.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile149.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile151.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile153.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile154.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile155.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile156.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile157.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile158.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile159.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile160.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile161.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile162.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile163.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile164.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile165.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile166.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile167.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile168.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile169.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile170.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile171.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile172.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile173.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile174.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile175.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile176.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile177.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile178.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile179.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile180.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile181.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile67.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile78.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile83.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile85.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile86.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile87.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile88.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile89.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile90.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile92.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile95.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile98.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/tile99.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/water.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/waterTop_high.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles/waterTop_low.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,6 +421,28 @@
       <option name="presentableId" value="Default" />
       <updated>1603816420399</updated>
     </task>
+    <task id="LOCAL-00001" summary="Extracted constants. Implemented scrolling, coins, sounds and score.">
+      <created>1605891262422</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605891262422</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Small tweak. Adding .idea to .gitignore">
+      <created>1605891474490</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605891474490</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added support of .tmx maps">
+      <created>1606566029079</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606566029079</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -86,42 +457,56 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Extracted constants. Implemented scrolling, coins, sounds and score." />
+    <MESSAGE value="Small tweak. Adding .idea to .gitignore" />
+    <MESSAGE value="Added support of .tmx maps" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added support of .tmx maps" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="740" y="183" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603818811622">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="183" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603818811622" />
+    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1605891538887">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605891538887" />
     <state x="739" y="280" key="FileChooserDialogImpl" timestamp="1603818808925">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="739" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1603818808925" />
-    <state width="1899" height="284" key="GridCell.Tab.0.bottom" timestamp="1605891201860">
+    <state width="1899" height="284" key="GridCell.Tab.0.bottom" timestamp="1607274186240">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605891201860" />
+    <state width="1899" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1607265833332" />
+    <state width="1899" height="284" key="GridCell.Tab.0.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1607274186240" />
     <state width="1899" height="285" key="GridCell.Tab.0.bottom/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1605445362460" />
-    <state width="1899" height="284" key="GridCell.Tab.0.center" timestamp="1605891201860">
+    <state width="1899" height="284" key="GridCell.Tab.0.center" timestamp="1607274186240">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="284" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605891201860" />
+    <state width="1899" height="284" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1607265833332" />
+    <state width="1899" height="284" key="GridCell.Tab.0.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1607274186240" />
     <state width="1899" height="285" key="GridCell.Tab.0.center/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1605445362459" />
-    <state width="1899" height="284" key="GridCell.Tab.0.left" timestamp="1605891201860">
+    <state width="1899" height="284" key="GridCell.Tab.0.left" timestamp="1607274186240">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="284" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605891201860" />
+    <state width="1899" height="284" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1607265833332" />
+    <state width="1899" height="284" key="GridCell.Tab.0.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1607274186240" />
     <state width="1899" height="285" key="GridCell.Tab.0.left/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1605445362459" />
-    <state width="1899" height="284" key="GridCell.Tab.0.right" timestamp="1605891201860">
+    <state width="1899" height="284" key="GridCell.Tab.0.right" timestamp="1607274186240">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="284" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605891201860" />
+    <state width="1899" height="284" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1607265833332" />
+    <state width="1899" height="284" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1607274186240" />
     <state width="1899" height="285" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1605445362460" />
     <state x="461" y="170" key="SettingsEditor" timestamp="1605282141551">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605282141551" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1605284663000">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1605891523430">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605284663000" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605891523430" />
   </component>
 </project>
