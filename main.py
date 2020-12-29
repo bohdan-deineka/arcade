@@ -14,7 +14,7 @@ import constants
 class Game(arcade.Window):
 
     def __init__(self):
-        super().__init__(constants.SCREEN_WIDTH, constants.SCREEN_HEIGHT, constants.SCREEN_TITLE)
+        super().__init__(constants.SCREEN_WIDTH, constants.SCREEN_HEIGHT, constants.SCREEN_TITLE, fullscreen=True)
 
         self.coin_list = None
         self.wall_list = None
@@ -120,6 +120,15 @@ class Game(arcade.Window):
                 self.player_sprite.change_x = -constants.PLAYER_MOVEMENT_SPEED
         elif key == arcade.key.RIGHT or key == arcade.key.D:
             self.player_sprite.change_x = constants.PLAYER_MOVEMENT_SPEED
+
+        if key == arcade.key.F:
+           # User hits f. Flip between full and not full screen.
+          self.set_fullscreen(not self.fullscreen)
+
+          # Get the window coordinates. Match viewport to window coordinates
+          # so there is a one-to-one mapping.
+          width, height = self.get_size()
+          self.set_viewport(0, width, 0, height)
 
     def on_key_release(self, key, modifiers):
         if key == arcade.key.LEFT or key == arcade.key.A:
