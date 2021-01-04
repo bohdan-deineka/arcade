@@ -41,7 +41,19 @@ class Game(arcade.Window):
         self.jump_sound = arcade.load_sound(":resources:sounds/jump1.wav")
         self.game_over = arcade.load_sound(":resources:sounds/gameover1.wav")
 
+        self.music_list = []
+        self.current_song_index = 0
+        self.current_player = None
+        self.music = None
+
         arcade.set_background_color(arcade.csscolor.BLACK)
+
+    def play_song(self):
+        if self.music:
+            self.music.stop()
+
+        self.music = arcade.Sound(self.music_list[self.current_song_index], streaming = True)
+        self.current_player = self.music.play(constants.MUSIC_VOLUME)
 
     def setup(self, level):
 
@@ -97,6 +109,10 @@ class Game(arcade.Window):
                                                              self.wall_list,
                                                              constants.GRAVITY)
 
+        self.music_list = ["music/guitar_music.wav"]
+        self.current_song_index = 0
+        self.play_song()
+
     def on_draw(self):
         arcade.start_render()
 
@@ -122,13 +138,13 @@ class Game(arcade.Window):
             self.player_sprite.change_x = constants.PLAYER_MOVEMENT_SPEED
 
         if key == arcade.key.F:
-           # User hits f. Flip between full and not full screen.
-          self.set_fullscreen(not self.fullscreen)
+            # User hits f. Flip between full and not full screen.
+            self.set_fullscreen(not self.fullscreen)
 
-          # Get the window coordinates. Match viewport to window coordinates
-          # so there is a one-to-one mapping.
-          width, height = self.get_size()
-          self.set_viewport(0, width, 0, height)
+            # Get the window coordinates. Match viewport to window coordinates
+            # so there is a one-to-one mapping.
+            width, height = self.get_size()
+            self.set_viewport(0, width, 0, height)
 
     def on_key_release(self, key, modifiers):
         if key == arcade.key.LEFT or key == arcade.key.A:
@@ -217,6 +233,10 @@ class Game(arcade.Window):
                                 constants.SCREEN_WIDTH + self.view_left,
                                 self.view_bottom,
                                 constants.SCREEN_HEIGHT + self.view_bottom)
+
+        position = self.music.get_stream_position()
+        if position == 0.0:
+            self.play_song()
 
 
 def main():
