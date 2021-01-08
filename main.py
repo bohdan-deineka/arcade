@@ -9,6 +9,7 @@ __status__ = "Production"
 
 import arcade
 import constants
+import os
 
 
 class Game(arcade.Window):
@@ -16,9 +17,14 @@ class Game(arcade.Window):
     def __init__(self):
         super().__init__(constants.SCREEN_WIDTH, constants.SCREEN_HEIGHT, constants.SCREEN_TITLE, fullscreen=True)
 
+        # Set the path to start with this program
+        file_path = os.path.dirname(os.path.abspath(__file__))
+        os.chdir(file_path)
+
         self.coin_list = None
         self.wall_list = None
         self.player_list = None
+        self.background_list = None
 
         self.player_sprite = None
 
@@ -74,6 +80,7 @@ class Game(arcade.Window):
         map_name = "maps/map_castle.tmx"
         # Name of the layer in the file that has our platforms/walls
         platforms_layer_name = 'Platforms'
+        moving_platforms_layer_name = 'Moving Platforms'
         # Name of the layer that has items for pick-up
         coins_layer_name = 'Coins'
         # Name of the layer that has items for background
@@ -95,6 +102,11 @@ class Game(arcade.Window):
                                                       layer_name=platforms_layer_name,
                                                       scaling=constants.TILE_SCALING,
                                                       use_spatial_hash=True)
+
+        # -- Moving Platforms
+        moving_platforms_list = arcade.tilemap.process_layer(my_map, moving_platforms_layer_name, constants.TILE_SCALING)
+        for sprite in moving_platforms_list:
+            self.wall_list.append(sprite)
 
         # -- Coins
         self.coin_list = arcade.tilemap.process_layer(my_map, coins_layer_name, constants.TILE_SCALING)
@@ -154,6 +166,25 @@ class Game(arcade.Window):
 
     def on_update(self, delta_time):
         self.physics_engine.update()
+
+        # Update animations
+        self.coin_list.update_animation(delta_time)
+        self.background_list.update_animation(delta_time)
+
+        # Update walls, used with moving platforms
+        self.wall_list.update()
+
+        # See if the wall hit a boundary and needs to reverse direction.
+        for wall in self.wall_list:
+
+            if wall.boundary_right and wall.right > wall.boundary_right and wall.change_x > 0:
+                wall.change_x *= -1
+            if wall.boundary_left and wall.left < wall.boundary_left and wall.change_x < 0:
+                wall.change_x *= -1
+            if wall.boundary_top and wall.top > wall.boundary_top and wall.change_y > 0:
+                wall.change_y *= -1
+            if wall.boundary_bottom and wall.bottom < wall.boundary_bottom and wall.change_y < 0:
+                wall.change_y *= -1
 
         # See if we hit any coins
         coin_hit_list = arcade.check_for_collision_with_list(self.player_sprite,
