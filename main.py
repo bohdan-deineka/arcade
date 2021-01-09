@@ -11,6 +11,90 @@ import arcade
 import constants
 import os
 
+def load_texture_pair(filename):
+    """
+    Load a texture pair, with the second being a mirror image.
+    """
+    return [
+        arcade.load_texture(filename),
+        arcade.load_texture(filename, flipped_horizontally=True)
+    ]
+
+
+class PlayerCharacter(arcade.Sprite):
+    """ Player Sprite"""
+    def __init__(self):
+
+        # Set up parent class
+        super().__init__()
+
+        # Default to face-right
+        self.character_face_direction = constants.RIGHT_FACING
+
+        # Used for flipping between image sequences
+        self.cur_texture = 0
+        self.scale = constants.CHARACTER_SCALING
+
+        # Track our state
+        self.jumping = False
+
+        # --- Load Textures ---
+        main_path = "images/character"
+
+        # Load textures for idle standing
+        self.idle_textures = []
+        for i in range(1, 5):
+            texture = load_texture_pair(f"{main_path}/grave_robber_idle ({i}).png")
+            self.idle_textures.append(texture)
+
+        # Load textures for walking
+        self.walk_textures = []
+        for i in range(1, 7):
+            texture = load_texture_pair(f"{main_path}/grave_robber_walk ({i}).png")
+            self.walk_textures.append(texture)
+
+        # Load textures for jumping
+        self.jump_textures = []
+        for i in range(1, 7):
+            texture = load_texture_pair(f"{main_path}/grave_robber_jump ({i}).png")
+            self.jump_textures.append(texture)
+
+        # Set the initial texture
+        self.texture = self.idle_textures[0][0]
+
+        # Hit box will be set based on the first image used.
+        self.set_hit_box(self.texture.hit_box_points)
+
+    def update_animation(self, delta_time: float = 1/60):
+
+        # Figure out if we need to flip face left or right
+        if self.change_x < 0 and self.character_face_direction == constants.RIGHT_FACING:
+            self.character_face_direction = constants.LEFT_FACING
+        elif self.change_x > 0 and self.character_face_direction == constants.LEFT_FACING:
+            self.character_face_direction = constants.RIGHT_FACING
+
+        # Jumping animation
+        if self.change_y > 0:
+            self.cur_texture += 1
+            if self.cur_texture > 5:
+                self.cur_texture = 0
+            self.texture = self.jump_textures[self.cur_texture][self.character_face_direction]
+            return
+
+        # Idle animation
+        if self.change_x == 0:
+            self.cur_texture += 1
+            if self.cur_texture > 3:
+                self.cur_texture = 0
+            self.texture = self.idle_textures[self.cur_texture][self.character_face_direction]
+            return
+
+        # Walking animation
+        self.cur_texture += 1
+        if self.cur_texture > 5:
+            self.cur_texture = 0
+        self.texture = self.walk_textures[self.cur_texture][self.character_face_direction]
+
 
 class Game(arcade.Window):
 
@@ -20,6 +104,12 @@ class Game(arcade.Window):
         # Set the path to start with this program
         file_path = os.path.dirname(os.path.abspath(__file__))
         os.chdir(file_path)
+
+        self.left_pressed = False
+        self.right_pressed = False
+        self.up_pressed = False
+        self.down_pressed = False
+        self.jump_needs_reset = False
 
         self.coin_list = None
         self.wall_list = None
@@ -68,8 +158,7 @@ class Game(arcade.Window):
         self.coin_list = arcade.SpriteList(use_spatial_hash=True)
         self.background_list = arcade.SpriteList(use_spatial_hash=True)
 
-        image_source = "images/character/GraveRobber.png"
-        self.player_sprite = arcade.Sprite(image_source, constants.CHARACTER_SCALING)
+        self.player_sprite = PlayerCharacter()
         self.player_sprite.center_x = constants.PLAYER_START_X
         self.player_sprite.center_y = constants.PLAYER_START_Y
         self.player_list.append(self.player_sprite)
@@ -138,17 +227,31 @@ class Game(arcade.Window):
         arcade.draw_text(score_text, 10 + self.view_left, 10 + self.view_bottom,
                          arcade.csscolor.WHITE, 18)
 
-    def on_key_press(self, key, modifiers):
-        if key == arcade.key.UP or key == arcade.key.W:
-            if self.physics_engine.can_jump():
+    def process_keychange(self):
+        """
+        Called when we change a key up/down or we move on/off a ladder.
+        """
+        # Process up/down
+        if self.up_pressed and not self.down_pressed:
+            if self.physics_engine.is_on_ladder():
+                self.player_sprite.change_y = constants.PLAYER_MOVEMENT_SPEED
+            elif self.physics_engine.can_jump(y_distance=10) and not self.jump_needs_reset:
                 self.player_sprite.change_y = constants.PLAYER_JUMP_SPEED
+                self.jump_needs_reset = True
                 arcade.play_sound(self.jump_sound)
-        elif key == arcade.key.LEFT or key == arcade.key.A:
-            if self.player_sprite.left > self.view_left + constants.LEFT_VIEWPORT_MARGIN:
-                self.player_sprite.change_x = -constants.PLAYER_MOVEMENT_SPEED
-        elif key == arcade.key.RIGHT or key == arcade.key.D:
-            self.player_sprite.change_x = constants.PLAYER_MOVEMENT_SPEED
+        elif self.down_pressed and not self.up_pressed:
+            if self.physics_engine.is_on_ladder():
+                self.player_sprite.change_y = -constants.PLAYER_MOVEMENT_SPEED
 
+        # Process left/right
+        if self.right_pressed and not self.left_pressed:
+            self.player_sprite.change_x = constants.PLAYER_MOVEMENT_SPEED
+        elif self.left_pressed and not self.right_pressed:
+            self.player_sprite.change_x = -constants.PLAYER_MOVEMENT_SPEED
+        else:
+            self.player_sprite.change_x = 0
+ 
+    def on_key_press(self, key, modifiers):
         if key == arcade.key.F:
             # User hits f. Flip between full and not full screen.
             self.set_fullscreen(not self.fullscreen)
@@ -158,18 +261,43 @@ class Game(arcade.Window):
             width, height = self.get_size()
             self.set_viewport(0, width, 0, height)
 
-    def on_key_release(self, key, modifiers):
-        if key == arcade.key.LEFT or key == arcade.key.A:
-            self.player_sprite.change_x = 0
+        if key == arcade.key.UP or key == arcade.key.W:
+            self.up_pressed = True
+        elif key == arcade.key.DOWN or key == arcade.key.S:
+            self.down_pressed = True
+        elif key == arcade.key.LEFT or key == arcade.key.A:
+            self.left_pressed = True
         elif key == arcade.key.RIGHT or key == arcade.key.D:
-            self.player_sprite.change_x = 0
+            self.right_pressed = True
+
+        self.process_keychange()
+
+    def on_key_release(self, key, modifiers):
+        if key == arcade.key.UP or key == arcade.key.W:
+            self.up_pressed = False
+            self.jump_needs_reset = False
+        elif key == arcade.key.DOWN or key == arcade.key.S:
+            self.down_pressed = False
+        elif key == arcade.key.LEFT or key == arcade.key.A:
+            self.left_pressed = False        
+        elif key == arcade.key.RIGHT or key == arcade.key.D:
+            self.right_pressed = False
+
+        self.process_keychange()    
 
     def on_update(self, delta_time):
         self.physics_engine.update()
 
         # Update animations
+        if self.physics_engine.can_jump():
+            self.player_sprite.can_jump = False
+        else:
+            self.player_sprite.can_jump = True
+
+        # Update animations
         self.coin_list.update_animation(delta_time)
         self.background_list.update_animation(delta_time)
+        self.player_list.update_animation(delta_time)
 
         # Update walls, used with moving platforms
         self.wall_list.update()

@@ -33,3 +33,6 @@ TOP_VIEWPORT_MARGIN = 100
 PLAYER_START_X = 8
 PLAYER_START_Y = 192
 
+# Constants used to track if the player is facing left or right
+RIGHT_FACING = 0
+LEFT_FACING = 1
