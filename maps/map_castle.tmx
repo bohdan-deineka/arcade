@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="150" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="12">
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="150" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="14">
  <tileset firstgid="1" source="magiclanddizzy_tiles.tsx"/>
  <layer id="1" name="Background" width="150" height="40">
   <data encoding="csv">
@@ -46,16 +46,30 @@
 </data>
  </layer>
  <objectgroup id="4" name="Moving Platforms">
-  <object id="4" gid="929" x="736" y="496" width="48" height="16">
+  <object id="4" gid="929" x="736" y="496" width="16" height="16">
    <properties>
     <property name="boundary_left" type="float" value="736"/>
-	<property name="boundary_right" type="float" value="880"/>
+    <property name="boundary_right" type="float" value="864"/>
     <property name="change_x" type="float" value="0.5"/>
    </properties>
   </object>
-  <object id="10" gid="929" x="1296.5" y="496" width="48" height="16">
+  <object id="10" gid="929" x="1296" y="496" width="16" height="16">
    <properties>
     <property name="boundary_left" type="float" value="1296"/>
+    <property name="boundary_right" type="float" value="1392"/>
+    <property name="change_x" type="float" value="0.5"/>
+   </properties>
+  </object>
+  <object id="12" gid="929" x="752" y="496" width="16" height="16">
+   <properties>
+    <property name="boundary_left" type="float" value="752"/>
+    <property name="boundary_right" type="float" value="880"/>
+    <property name="change_x" type="float" value="0.5"/>
+   </properties>
+  </object>
+  <object id="13" gid="929" x="1312" y="496" width="16" height="16">
+   <properties>
+    <property name="boundary_left" type="float" value="1312"/>
     <property name="boundary_right" type="float" value="1408"/>
     <property name="change_x" type="float" value="0.5"/>
    </properties>
