@@ -1,20 +1,20 @@
-																			#################### OPIS GRY #################### 
+Transfered from my another private GitHub: python-arcade
 
-Lost Aristocrate to  gra nale¿¹ca do gatunku metroidvanii, dwuwymiarowa platformówka autorstwa niezale¿nego Teamu trzech studentów Uniwersytetu £odzkiego.
+Lost Aristocrate to  gra naleÅ¼Ä…ca do gatunku metroidvanii, dwuwymiarowa platformÃ³wka autorstwa niezaleÅ¼nego Teamu trzech studentÃ³w Uniwersytetu Åodzkiego.
 	
-W rozgrywce trafiamy do mrocznego œwiata science fiction, gdzie wcielamy siê w rolê znudzonego ¿yciem Arystokraty. 
-Bohater zostaje porwany i porzucony w œrodku lasu, od tamtej pory b³¹ka siê w poszukiwaniu swoich porywaczy. 
-Jego celem jest zabicie wszystkich, którzy stan¹ mu na drodze. 
-Akcja ukazana jest z boku przy czym odwiedzone lokacje s¹ wielopoziomowe. 
-Sednem rozgrywki jest eksploracja fantazyjnych lokacji w wiktoriañskim klimacie.
-Do wyboru mamy trzy obszary w których toczy siê gra.
-Gracz dostaje pewn¹ swobodê w wyborze odwiedzania lokacji.
-W ka¿dej z dostêpnych miejscówek na bohatera czekaj¹ potwory, które wystêpuj¹ w ró¿nych odmianach i cechuj¹ siê unikalnymi umiejêtnoœciami.
-Starcia stanowi¹ istotny element gry, wrogów posy³amy na tamten œwiat, wykonuj¹c szybkie kombinacje ciosów, zakoñczone efektownymi wygranymi.
-W danej chwili nasza postaæ mo¿e byæ wyposa¿ona w trzy ró¿ne umiejêtnoœci specjalne (magiczne) czyli (ogieñ, mróz i szok) oraz dwa odmienne typy broni (paln¹ i bia³a). 
-Niektóre kombinacje przedmiotów i zdolnoœci mog¹ byæ niezwykle potê¿ne.
-Wszystkie rodzaje broni, mo¿na przechowywaæ w zaimplementowanym do gry inwentarzu.
-Niezwykle istotn¹ cech¹ gry jest to, ¿e œmieræ kontrolowanej przez nas postaci ma charakter permanentny, zatem wi¹¿e siê z koniecznoœci¹ rozpoczêcia przygody od pocz¹tku.
+W rozgrywce trafiamy do mrocznego Å›wiata science fiction, gdzie wcielamy siÄ™ w rolÄ™ znudzonego Å¼yciem Arystokraty. 
+Bohater zostaje porwany i porzucony w Å›rodku lasu, od tamtej pory bÅ‚Ä…ka siÄ™ w poszukiwaniu swoich porywaczy. 
+Jego celem jest zabicie wszystkich, ktÃ³rzy stanÄ… mu na drodze. 
+Akcja ukazana jest z boku przy czym odwiedzone lokacje sÄ… wielopoziomowe. 
+Sednem rozgrywki jest eksploracja fantazyjnych lokacji w wiktoriaÅ„skim klimacie.
+Do wyboru mamy trzy obszary w ktÃ³rych toczy siÄ™ gra.
+Gracz dostaje pewnÄ… swobodÄ™ w wyborze odwiedzania lokacji.
+W kaÅ¼dej z dostÄ™pnych miejscÃ³wek na bohatera czekajÄ… potwory, ktÃ³re wystÄ™pujÄ… w rÃ³Å¼nych odmianach i cechujÄ… siÄ™ unikalnymi umiejÄ™tnoÅ›ciami.
+Starcia stanowiÄ… istotny element gry, wrogÃ³w posyÅ‚amy na tamten Å›wiat, wykonujÄ…c szybkie kombinacje ciosÃ³w, zakoÅ„czone efektownymi wygranymi.
+W danej chwili nasza postaÄ‡ moÅ¼e byÄ‡ wyposaÅ¼ona w trzy rÃ³Å¼ne umiejÄ™tnoÅ›ci specjalne (magiczne) czyli (ogieÅ„, mrÃ³z i szok) oraz dwa odmienne typy broni (palnÄ… i biaÅ‚a). 
+NiektÃ³re kombinacje przedmiotÃ³w i zdolnoÅ›ci mogÄ… byÄ‡ niezwykle potÄ™Å¼ne.
+Wszystkie rodzaje broni, moÅ¼na przechowywaÄ‡ w zaimplementowanym do gry inwentarzu.
+Niezwykle istotnÄ… cechÄ… gry jest to, Å¼e Å›mierÄ‡ kontrolowanej przez nas postaci ma charakter permanentny, zatem wiÄ…Å¼e siÄ™ z koniecznoÅ›ciÄ… rozpoczÄ™cia przygody od poczÄ…tku.
 
 
 
